@@ -6,12 +6,22 @@
 </head>
 <body>
     <h1>Mi primer repositorio en GitHub</h1>
+    <h2>Contador de clics</h2>
+<p id="contador">0</p>
+<button onclick="aumentar()">Aumentar</button>
+     
 
     <button onclick="saludar()">Saludar</button>
 
     <script>
         function saludar() {
             alert("Hola, bienvenido a mi proyecto");
+            let numero = 0;
+
+function aumentar() {
+    numero++;
+    document.getElementById("contador").textContent = numero;
+}
         }
     </script>
 </body>
